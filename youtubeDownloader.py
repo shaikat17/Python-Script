@@ -3,22 +3,6 @@ import os
 
 currentDir = os.getcwd()
 
-# def checkDup(title):
-# 	if not os.path.isdir(os.path.join(currentDir,'Music')):
-# 		os.mkdir(os.path.join(currentDir,'Music'))
-
-# 	allFiles = [file for file in os.listdir(os.path.join(currentDir,'Music')) if file.endswith('.mp3')]
-
-# 	title = title+'.mp3'	
-
-# 	print(title)
-# 	print(allFiles)
-# 	if title in allFiles:
-# 		print('Already Downloaded')
-# 		return False
-# 	else:
-# 		return True
-
 def DownloadFile(url):
 	try:
 		yt = YouTube(url)
